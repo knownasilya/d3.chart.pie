@@ -6,7 +6,7 @@
       .attr('height', 300)
       .chart('Pie', {
         radius: 100,
-        innerRadius: 45
+        innerRadius: 80
       });
 
   chart.draw([
@@ -19,8 +19,29 @@
       value: 5
     },
     {
+      label: 'three',
+      value: 1.5
+    },
+    {
       label: 'other',
       value: 1
     }
   ]);
+
+  setTimeout(function () {
+    chart.draw([
+      {
+        label: 'one',
+        value: 9
+      },
+      {
+        label: 'two',
+        value: 1
+      },
+      {
+        label: 'other',
+        value: 3
+      }
+    ]);
+  }, 1500);
 }());
