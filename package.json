@@ -1,0 +1,27 @@
+{
+  "name": "d3.chart.pie",
+  "description": "Pie/Donut chart with d3 and d3.chart"
+  "version": "0.0.0",
+  "author": "Ilya Radchenko",
+  "license": "MIT",
+  
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/knownasilya/d3.chart.pie.git"
+  },
+  
+  "keywords": [
+    "d3.js",
+    "visualization",
+    "svg",
+    "pie",
+    "donut"
+  ],
+
+  "d3.chart": {
+    "version" : "0.1.3"
+  },
+
+  "devDependencies": {
+  }
+}

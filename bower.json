@@ -1,0 +1,29 @@
+{
+  "name": "d3.chart.pie",
+  "version": "0.0.0",
+  "homepage": "https://github.com/knownasilya/d3.chart.pie",
+  "authors": [
+    "Ilya Radchenko <ilya@burstcreations.com>"
+  ],
+  "description": "Pie/Donut chart using d3 and d3.chart",
+  "main": "lib/pie.js",
+  "keywords": [
+    "pie",
+    "donut",
+    "d3",
+    "d3.chart"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.1",
+    "d3.chart": "~0.1.3"
+  }
+}
