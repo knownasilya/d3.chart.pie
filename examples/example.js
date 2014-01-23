@@ -4,11 +4,10 @@
     .append('svg')
       .attr('width', 450)
       .attr('height', 300)
-      .chart('Pie')
-      .height(50)
-      .width(50)
-      .innerRadius(45)
-      .radius(100);
+      .chart('Pie', {
+        radius: 100,
+        innerRadius: 45
+      });
 
   chart.draw([
     {
