@@ -18,7 +18,7 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
     .chart('Pie', {
       radius: 100,
       innerRadius: 80,
-      templateLabel: '[{label}]' // [my label]
+      labelTemplate: '[{label}]' // [my label]
     });
 
   // Draws graph once you add data.
