@@ -6,7 +6,8 @@
       .attr('height', 300)
       .chart('Pie', {
         radius: 100,
-        innerRadius: 80
+        innerRadius: 80,
+        labelTemplate: '{label}: {value}'
       });
 
   chart.draw([
