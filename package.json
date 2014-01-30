@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Ilya Radchenko",
   "license": "MIT",
+  "main": "dist/pie.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/knownasilya/d3.chart.pie.git"
