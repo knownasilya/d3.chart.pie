@@ -1,0 +1,24 @@
+#vis {
+  background-color: #fff;
+  border: 1px solid #808080;
+  width: 450px;
+  height: 300px;
+  text-shadow: none;
+}
+#vis .total {
+  font-size: 18px;
+  font-weight: bold;
+}
+#vis .units {
+  fill: #808080;
+  font-size: 12px;
+}
+#vis .label {
+  fill: #ccc;
+  font-size: 12px;
+  font-weight: bold;
+}
+#vis .value {
+  font-size: 12px;
+  font-weight: bold;
+}
