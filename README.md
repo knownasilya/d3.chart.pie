@@ -37,8 +37,31 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
   ]);
 ```
 
-Not specifying the `innerRadius` value will create a Pie chart, rather then a Donut chart. Also `labelTemplate` is optional
-and defaults to the `value` property.
+
+### Available Options & Defaults
+
+```js
+  {
+    radius: 100,
+    innerRadius: 0,
+    width: 450, // Or container's width
+    height: 300, // Or container's height
+    labelTemplate: '{label}',
+    labels: undefined,
+    legend: undefined
+  }
+```
+
+The following options are available for `legend`:
+
+```js
+{
+  x: int|float,
+  y: int|float
+}
+```
+
+Not specifying the `innerRadius` value will create a Pie chart, rather then a Donut chart. 
 
 
 ## Contributing
