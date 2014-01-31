@@ -28,21 +28,4 @@
       value: 1
     }
   ]);
-
-  setTimeout(function () {
-    chart.draw([
-      {
-        label: 'one',
-        value: 9
-      },
-      {
-        label: 'two',
-        value: 1
-      },
-      {
-        label: 'other',
-        value: 3
-      }
-    ]);
-  }, 1500);
 }());

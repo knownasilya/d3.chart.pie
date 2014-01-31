@@ -7,7 +7,9 @@
 
   d3.chart('Pie', {
     initialize: function (options) {
-      var pieGroup,
+      var legendAvailable = d3.chart('Legend') !== null,
+        legendGroup,
+        pieGroup,
         labelGroup,
         tickGroup,
         centerCircleGroup,
@@ -23,6 +25,12 @@
       this.labelTemplate(options.labelTemplate || '{label}');
       this.labelOffset(options.labelOffset || 14);
 
+      if (legendAvailable) {
+        legendGroup = this.base.append('g')
+          .attr('class', 'legend');
+
+        this.legend = this.mixin('Legend', legendGroup);
+      }
 
       this.arc = d3.svg.arc()
         .startAngle(function (d) { 
