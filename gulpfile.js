@@ -52,6 +52,11 @@ gulp.task('watch', function () {
     gulp.watch('./lib/*.js', function () {
       gulp.run('copy');
     });
+
+    gulp.watch(['./examples/*.js', './examples/index.html'], function () {
+      gulp.src(['./examples/*.js', './examples/index.html'])
+        .pipe(refresh(lrServer));
+    });
   });
 });
 
