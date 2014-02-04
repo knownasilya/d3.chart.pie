@@ -67,10 +67,5 @@ gulp.task('openUrl', function(){
     .pipe(open('', { url: 'http://localhost:5000' }));
 });
 
-gulp.task('dev', function () {
-  gulp.start('less', 'copy', 'serve', 'openUrl', 'watch');
-});
-
-gulp.task('default', function () {
-  gulp.start('less', 'copy');
-});
+gulp.task('dev', ['less', 'copy', 'serve', 'openUrl', 'watch']);
+gulp.task('default', ['less', 'copy']);
