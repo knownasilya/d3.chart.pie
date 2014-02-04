@@ -74,7 +74,7 @@ The following options are available for `donutHole`:
 }
 ```
 
-Not specifying the `innerRadius` value will create a Pie chart, rather then a Donut chart. 
+Not specifying the `donutHole` object will create a Pie chart, rather then a Donut chart. 
 
 
 ## Contributing
