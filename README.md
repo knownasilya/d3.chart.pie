@@ -17,8 +17,12 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
     .height(350)
     .width(400)
     .chart('Pie', {
+      height: 350,
+      width: 400,
       radius: 100,
-      innerRadius: 80,
+      donutHole: {
+        radius: 80
+      }
       labelTemplate: '[{label}]' // [my label]
     });
 
@@ -43,12 +47,12 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
 ```js
   {
     radius: 100,
-    innerRadius: 0,
     width: 450, // Or container's width
     height: 300, // Or container's height
     labelTemplate: '{label}',
     labels: undefined,
     legend: undefined
+    donutHole: undefined
   }
 ```
 
@@ -58,6 +62,15 @@ The following options are available for `legend`:
 {
   x: int|float,
   y: int|float
+}
+```
+
+The following options are available for `donutHole`:
+
+```js
+{
+  radius: int|float,
+  color: valid d3 colors
 }
 ```
 
