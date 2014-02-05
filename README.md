@@ -1,7 +1,7 @@
 d3.chart.pie
 ============
 
-Pie/Donut chart using d3 and d3.chart. 
+Pie/Donut chart using d3 and d3.chart, see [demo here][7]. 
 
 Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
 
@@ -85,3 +85,4 @@ See the following links:
 [4]: http://jsfiddle.net/stephenboak/hYuPb/
 [5]: http://www.stephenboak.com/
 [6]: https://github.com/knownasilya/d3.chart.legend
+[7]: http://jsbin.com/OzoXAQo/1
