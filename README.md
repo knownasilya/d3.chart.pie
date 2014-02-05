@@ -6,6 +6,7 @@ Pie/Donut chart using d3 and d3.chart.
 Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
 
 [![Dependencies](https://david-dm.org/knownasilya/d3.chart.pie.png)](https://david-dm.org/knownasilya/d3.chart.pie)  
+[![devDependency Status](https://david-dm.org/knownasilya/d3.chart.pie/dev-status.png)](https://david-dm.org/knownasilya/d3.chart.pie#info=devDependencies)  
 [![Gitter chat](https://badges.gitter.im/knownasilya/d3.chart.pie.png)](https://gitter.im/knownasilya/d3.chart.pie)
 
 ## Usage
