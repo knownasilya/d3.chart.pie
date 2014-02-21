@@ -85,4 +85,4 @@ See the following links:
 [4]: http://jsfiddle.net/stephenboak/hYuPb/
 [5]: http://www.stephenboak.com/
 [6]: https://github.com/knownasilya/d3.chart.legend
-[7]: http://jsbin.com/OzoXAQo/1
+[7]: http://jsbin.com/OzoXAQo/2
