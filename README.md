@@ -1,11 +1,12 @@
 d3.chart.pie
 ============
 
-Pie/Donut chart using d3 and d3.chart. 
+Pie/Donut chart using d3 and d3.chart, see [demo here][7]. 
 
 Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
 
 [![Dependencies](https://david-dm.org/knownasilya/d3.chart.pie.png)](https://david-dm.org/knownasilya/d3.chart.pie)  
+[![devDependency Status](https://david-dm.org/knownasilya/d3.chart.pie/dev-status.png)](https://david-dm.org/knownasilya/d3.chart.pie#info=devDependencies)  
 [![Gitter chat](https://badges.gitter.im/knownasilya/d3.chart.pie.png)](https://gitter.im/knownasilya/d3.chart.pie)
 
 ## Usage
@@ -56,14 +57,7 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
   }
 ```
 
-The following options are available for `legend`:
-
-```js
-{
-  x: int|float,
-  y: int|float
-}
-```
+See [d3.chart.legend][6] for available options and usage.
 
 The following options are available for `donutHole`:
 
@@ -90,3 +84,5 @@ See the following links:
 [3]: https://github.com/mbostock/d3/wiki/API-Reference
 [4]: http://jsfiddle.net/stephenboak/hYuPb/
 [5]: http://www.stephenboak.com/
+[6]: https://github.com/knownasilya/d3.chart.legend
+[7]: http://jsbin.com/OzoXAQo/1
