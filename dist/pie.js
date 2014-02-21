@@ -81,7 +81,7 @@
           .attr('class', 'legend')
           .chart('Legend', options.legend);
 
-        this.legend = this.attach('Legend', legendChart);
+        this.legend = this.attach('legend', legendChart);
         this.legend.base.attr('transform', function () { 
           return translate((options.radius * 2) + (options.radius / 2), options.radius / 3);
         });
@@ -270,6 +270,30 @@
 
     transform: function (data) {
       return this.donut(data);
+    },
+
+    demux: function (name, data) {
+      var results = [],
+        item;
+
+      if (name === 'legend') {
+        for (item in data) {
+          if (!data.hasOwnProperty(item)) {
+            continue;
+          }
+
+          item = data[item];
+
+          if (item && item.data) {
+            results.push(item.data.label);    
+          }
+        }
+
+        return results;
+      }
+      else {
+        return data;
+      }
     },
 
     radius: function (radius) {
