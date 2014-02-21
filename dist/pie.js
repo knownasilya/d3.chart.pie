@@ -77,10 +77,11 @@
 
       // setup legend - if exists
       if (options.legend && legendAvailable) {
-        legendGroup = this.base.append('g')
-          .attr('class', 'legend');
+        legendChart = this.base.append('g')
+          .attr('class', 'legend')
+          .chart('Legend', options.legend);
 
-        this.legend = this.attach('Legend', legendGroup, options.legend);
+        this.legend = this.attach('Legend', legendChart);
         this.legend.base.attr('transform', function () { 
           return translate((options.radius * 2) + (options.radius / 2), options.radius / 3);
         });

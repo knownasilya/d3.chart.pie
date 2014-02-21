@@ -1,7 +1,7 @@
 {
   "name": "d3.chart.pie",
   "description": "Pie/Donut chart with d3 and d3.chart",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Ilya Radchenko",
   "license": "MIT",
   "main": "dist/pie.js",
