@@ -1,6 +1,6 @@
 {
   "name": "d3.chart.pie",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/knownasilya/d3.chart.pie",
   "authors": [
     "Ilya Radchenko <ilya@burstcreations.com>"
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "d3": "~3.4.1",
-    "d3.chart": "~0.2.0",
+    "d3.chart": "git://github.com/knownasilya/d3.chart#cd2b4a052e2027bbc702961ff2d76dbe39d777c2",
     "d3.chart.legend": "~0.1.3"
   }
 }
