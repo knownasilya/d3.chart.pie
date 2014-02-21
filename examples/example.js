@@ -19,10 +19,7 @@
         },
         labelTemplate: '{label}: {value}',
         //labels: false,
-        legend: {
-          x: 250,
-          y: 50
-        }
+        legend: true
       });
 
   pie.draw(data);

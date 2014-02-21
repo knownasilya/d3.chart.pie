@@ -24,7 +24,7 @@
     "gulp-util": "~2.2.13",
     "gulp": "~3.5.0",
     "gulp-less": "~1.2.1",
-    "gulp-livereload": "~0.2.0",
+    "gulp-livereload": "~1.1.1",
     "tiny-lr": "0.0.5",
     "express": "~3.4.8",
     "connect-livereload": "~0.3.2",
