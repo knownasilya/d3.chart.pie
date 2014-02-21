@@ -1,7 +1,7 @@
 {
   "name": "d3.chart.pie",
   "description": "Pie/Donut chart with d3 and d3.chart",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "author": "Ilya Radchenko",
   "license": "MIT",
   "main": "dist/pie.js",
@@ -18,7 +18,7 @@
     "legend"
   ],
   "d3.chart": {
-    "version": "0.1.3"
+    "version": "0.2.0"
   },
   "devDependencies": {
     "gulp-util": "~2.2.13",
