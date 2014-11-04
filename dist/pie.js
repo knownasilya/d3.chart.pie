@@ -27,6 +27,7 @@
       }
       this.labelTemplate(options.labelTemplate || '{label}');
       this.labelOffset(options.labelOffset || 14);
+      this.sWidth = options.strokeWidth || 0.5;
 
 
       // setup tools for later
@@ -110,7 +111,7 @@
             var chart = this.chart();
 
             return this.attr('stroke', 'white')
-              .attr('stroke-width', 0.5)
+              .attr('stroke-width', chart.sWidth)
               .attr('fill', function (d, i) {
                   return chart.color(i);
                 })
@@ -129,7 +130,7 @@
             var chart = this.chart();
 
             return this.attr('stroke', 'white')
-              .attr('stroke-width', 0.5)
+              .attr('stroke-width', chart.sWidth)
               .attr('fill', function (d, i) {
                   return chart.color(i);
                 })
@@ -347,6 +348,15 @@
       }
 
       this.t = template;
+      return this;
+    },
+
+    strokeWidth: function (strokeWidth) {
+      if (arguments.length === 0) {
+        return this.sWidth;
+      }
+
+      this.sWidth = strokeWidth;
       return this;
     }
   });
