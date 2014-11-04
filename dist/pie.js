@@ -18,7 +18,9 @@
 
       // setup options
       options = options || {};
-      options.labels = options.legend ? false : true;
+      if (options.labels === undefined) {
+        options.labels = options.legend ? false : true;
+      }
       this.width(options.width || this.base.attr('width') || 450);
       this.height(options.height || this.base.attr('height') || 300);
       this.radius(options.radius || 100);
