@@ -112,7 +112,11 @@
             return this.attr('stroke', 'white')
               .attr('stroke-width', 0.5)
               .attr('fill', function (d, i) {
-                  return chart.color(i);
+                  if(chart.color.length === 1) {
+                    return chart.color(i);
+                  } else {
+                    return chart.color(d.data, i);
+                  }
                 })
               .attr('d', chart.arc)
               .on('mouseover', function (d) {
@@ -131,7 +135,11 @@
             return this.attr('stroke', 'white')
               .attr('stroke-width', 0.5)
               .attr('fill', function (d, i) {
-                  return chart.color(i);
+                  if(chart.color.length === 1) {
+                    return chart.color(i);
+                  } else {
+                    return chart.color(d.data, i);
+                  }
                 })
               .attr('d', chart.arc);
           },
@@ -348,7 +356,17 @@
 
       this.t = template;
       return this;
+    },
+
+    colors: function (color) {
+      if (arguments.length === 0) {
+        return this.color;
+      }
+
+      this.color = color;
+      return this;
     }
+
   });
 
   // Replace `{propName}` with objects properties in a string.
