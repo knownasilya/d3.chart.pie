@@ -15,8 +15,8 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
   // Appends the chart to an 'svg' element.
   var chart = d3.select('body')
     .append('svg')
-    .height(350)
-    .width(400)
+    .attr('width', 450)
+    .attr('height', 300)
     .chart('Pie', {
       height: 350,
       width: 400,
@@ -45,6 +45,8 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
 
 ### Available Options & Defaults
 
+These options are also exist as getter/setters on the chart.
+
 ```js
   {
     radius: 100,
@@ -52,8 +54,10 @@ Inspired and based on [this][4] jsfiddle by [Steve Boak][5].
     height: 300, // Or container's height
     labelTemplate: '{label}',
     labels: undefined,
-    legend: undefined
-    donutHole: undefined
+    legend: undefined,
+    donutHole: undefined,
+    strokeWidth: 0.5,
+    colors: d3.scale.category20() //takes a function
   }
 ```
 
@@ -68,8 +72,39 @@ The following options are available for `donutHole`:
 }
 ```
 
-Not specifying the `donutHole` object will create a Pie chart, rather then a Donut chart. 
+Not specifying the `donutHole` object will create a Pie chart, rather then a Donut chart.
 
+The `colors` option (or setter) takes a function and has the following contract:
+
+If the function takes one parameter (e.g. d3.scale.category20()), then it will be passed the index of each data element and should return a color. If the function takes two parameters, it will be passed both the data element and the index and should return a color. Here is an example that uses the setter.
+
+````javascript
+(function() {
+  var data = [
+    { label: 'one', value: 2 },
+    { label: 'two', value: 5 },
+    { label: 'three', value: 1.5 },
+    { label: 'other', value: 1 }
+  ],
+  pie = d3.select('#pie')
+    .append('svg')
+      .attr('width', 450)
+      .attr('height', 300)
+      .chart('Pie', {
+        width: 450,
+        height: 300,
+        legend: false
+      })
+      .colors(function(d, i){
+        var col = d3.scale.ordinal()
+          .domain(['one', 'two', 'three', 'other'])
+          .range(['crimson', 'coral', 'goldenrod', 'orange']);
+        return col(d.label);
+      });
+
+  pie.draw(data);
+}());
+````
 
 ## Contributing
 
